@@ -1,16 +1,3 @@
-@font-face {
-  font-family: 'Jura';
-  src: url('path/to/Jura-Bold.ttf') format('truetype'),
-       url('path/to/Jura-Bold.woff') format('woff'),
-       url('path/to/Jura-Bold.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'NTR';
-  src: url('path/to/NTR-Bold.ttf') format('truetype'),
-       url('path/to/NTR-Bold.woff') format('woff'),
-       url('path/to/NTR-Bold.woff2') format('woff2');
-}
 
 html,body{
   overflow-x: hidden;
@@ -209,6 +196,7 @@ nav ul li:hover::after{
   font-weight: lighter;
   font-size: 35px;
   margin-bottom: 3rem;
+  font-family: 'Jura', sans-serif;
 }
 
 .about-left{
