@@ -226,6 +226,12 @@ nav ul li:hover::after{
   inset 15px -10px 16px #653ec2,
   inset -5px 2px 17px #124b73;
   animation: shadow-web 7s ease-in-out forwards infinite;
+  transition: 2s;
+}
+
+.web-project:hover{
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 @keyframes shadow-web {
@@ -270,6 +276,30 @@ nav ul li:hover::after{
 .blog .projects .web-project{
   padding: 5rem;
   
+}
+/*----------------------------------------------*/
+footer{
+  margin-top: 10rem;
+}
+.footer{
+  padding: 1px;
+  background-color: #4eb8ff;
+}
+
+.copy-right{
+  display: flex;
+  justify-content: space-between;
+
+  color: white;
+}
+
+.copy-right ul li{
+  display: inline-block;
+  justify-content: space-between;
+  padding: 10px;
+  text-shadow:  0 0 7px #bf21f3,
+  0 0 10px #ad21f3;
+  transition: 0.5s;
 }
 
 /*----------------------------------------------*/
