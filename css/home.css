@@ -204,6 +204,75 @@ nav ul li:hover::after{
   top: -10%;
 }
 /*----------------------------------------------*/
+.projects{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 10rem;
+  color: white;
+  gap: 2rem;
+  width: 70%;
+  margin-left: 30px;
+}
+
+.web-project{
+  background-color: #8411bd;
+  padding: 8rem;
+  border-radius: 1rem;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 18px #219cf3,
+  0px 0px 16px #219cf3,
+  inset 15px -10px 16px #653ec2,
+  inset -5px 2px 17px #124b73;
+  animation: shadow-web 7s ease-in-out forwards infinite;
+}
+
+@keyframes shadow-web {
+  0%{
+    box-shadow: 0px 0px 18px #219cf3,
+    0px 0px 16px #219cf3,
+    inset 15px -10px 16px #653ec2,
+    inset -5px 2px 17px #124b73;
+  }
+  25%{
+    box-shadow: -9px 8px 18px #219cf3, 0px 0px 16px #219cf3, inset 15px -10px 16px #653ec2, inset -5px 2px 17px #124b73;
+  }
+
+  40%{
+    box-shadow: -5px 7px 18px #219cf3, 0px 0px 16px #219cf3, inset 15px -10px 16px #653ec2, inset -5px 2px 17px #124b73;
+  }
+
+  60%{
+    box-shadow: -3px 4px 18px #219cf3, 0px 0px 16px #219cf3, inset 15px -10px 16px #653ec2, inset -5px 2px 17px #124b73;
+  }
+
+
+  100%{
+    box-shadow: 0px 0px 18px #219cf3,
+    0px 0px 16px #219cf3,
+    inset 15px -10px 16px #653ec2,
+    inset -5px 2px 17px #124b73;
+  }
+}
+
+.blog{
+  color: white;
+  margin-top: 10rem;
+  margin-left: 30px;
+}
+
+.blog .projects{
+  grid-template-columns: repeat(3,1fr);
+  gap: 3rem;
+}
+
+.blog .projects .web-project{
+  padding: 5rem;
+  
+}
+
+/*----------------------------------------------*/
 a{
   text-decoration: none;
   color: white;
