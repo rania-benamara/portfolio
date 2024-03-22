@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'Jura';
+  src: url('path/to/Jura-Bold.ttf') format('truetype'),
+       url('path/to/Jura-Bold.woff') format('woff'),
+       url('path/to/Jura-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'NTR';
+  src: url('path/to/NTR-Bold.ttf') format('truetype'),
+       url('path/to/NTR-Bold.woff') format('woff'),
+       url('path/to/NTR-Bold.woff2') format('woff2');
+}
+
+
+body{
+  background-color: #0e022b;
+  font-family: 'Jura', sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.home{
+  color: white;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+.header{
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15rem;
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+nav ul li:after{
+   content: ' ';
+   width: 0%;
+    height: 2px;
+    background: white;
+    box-shadow:   0 0 7px #bf21f3,
+    0 0 10px #ad21f3;
+    display: block;
+    margin: auto;
+    transition: 0.5s ;
+}
+nav ul li:hover::after{
+  width: 100%;
+}
+
+.circle-arrow{
+  width: 150px;
+  height: 60px;
+  position: absolute;
+ 
+  
+  transform: translate(-50%,-50%);
+ animation: roti 4s linear forwards infinite;
+}
+
+@keyframes roti {
+  0%{
+      transform: translate(-50%,-50%) rotate(0deg);
+  }
+
+  100%{
+    transform: translate(-50%,-50%) rotate(-360deg);
+  }
+}
+
+.circle-arrow::before{
+  content: '';
+  position: absolute;
+  top: 23%;
+  left: 80%;
+  transform: translate(-50%,-50%) rotate(90deg);
+  width: 35px;
+  height: 35px;
+  border-top: 2px solid #21d0f3;
+  border-top-left-radius: 40px;
+}
+
+.circle-arrow::after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(90deg);
+  width: 35px;
+  height: 35px;
+  border-bottom: 2px solid #21d0f3;
+  border-bottom-right-radius: 100px;
+}
+
+/*-----------------------------------------------*/
+.hero{
+  display: flex;
+  font-size: 25px;
+  font-family: "NTR", sans-serif;
+  font-weight: lighter;
+}
+
+.hero .hero-right h1{
+   font-weight: lighter;
+   font-size: 35px;
+   font-family: "jura", sans-serif;
+   margin-bottom: 1rem;
+
+}
+
+.hero .hero-right .hero-h1{
+  
+  color: white;
+  text-shadow: 0 0 7px #bf21f3,
+  0 0 10px #ad21f3;
+  font-size: 38px;
+  
+  
+}
+
+.hero .hero-left {
+   margin: auto;
+}
+/*----------------------------------------------*/
+a{
+  text-decoration: none;
+  color: white;
+}
+
+li{
+  list-style: none;
+
+  
+}
+
+span{
+  color: white;
+  text-shadow:  0 0 7px #bf21f3,
+  0 0 10px #ad21f3;
+  font-size: 25px;
+}
