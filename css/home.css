@@ -212,6 +212,7 @@ nav ul li:hover::after{
   gap: 2rem;
   width: 70%;
   margin-left: 30px;
+  transition: opacity 3s;
 }
 
 .web-project{
@@ -308,7 +309,7 @@ footer{
 .project-content{
    display: grid;
    grid-template-columns:repeat(3,1fr) ;
-   display: none;
+   opacity: 0;
 }
 
 .first-project{
@@ -328,6 +329,18 @@ footer{
   color: white;
   margin-left: 30px;
   margin-bottom: 10px;
+}
+
+#go-back{
+  text-shadow:  0 0 7px #bf21f3,
+  0 0 10px #ad21f3;
+  transition: 0.5s;
+}
+
+#go-back:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: opacity 2s;
 }
 
 /*----------------------------------------------*/
