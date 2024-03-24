@@ -302,6 +302,34 @@ footer{
   transition: 0.5s;
 }
 
+
+/*-----------------------------------------------*/
+
+.project-content{
+   display: grid;
+   grid-template-columns:repeat(3,1fr) ;
+   display: none;
+}
+
+.first-project{
+  padding: 12px 7px 12px 7px;
+  font-size: 25px;
+  color: rgba(187, 186, 186, 0.621);
+  text-align: left;
+}
+
+.first-project span{
+  font-size: 18px;
+}
+
+.first-project div{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
 /*----------------------------------------------*/
 a{
   text-decoration: none;
