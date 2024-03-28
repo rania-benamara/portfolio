@@ -306,9 +306,9 @@ footer{
 /*-----------------------------------------------*/
 
 .project-content{
-   display: grid;
+   display: none;
    grid-template-columns:repeat(3,1fr) ;
-   opacity: 0;
+   
 }
 
 .first-project{
@@ -329,6 +329,9 @@ footer{
   color: white;
   margin-left: 30px;
   margin-bottom: 10px;
+}
+.first-project div a{
+  padding: 5px;
 }
 
 #go-back{
@@ -364,6 +367,10 @@ span{
 
 
 /*--------media querry---------------*/
+
+
+
+
 @media (max-width:960px){
   .hero{
     font-size: 18px;
@@ -393,7 +400,9 @@ span{
   }
 }
 
-@media (max-width:600px){
+
+
+@media (max-width:768px){
   .hero{
     flex-direction: column;
   }
@@ -415,3 +424,34 @@ span{
   }
 
 }
+
+@media(max-width:500px){
+  .web-project{
+    padding: 3rem;
+    font-size: 20px;
+  }
+
+  nav ul li{
+    padding: 3px;
+    font-size: 15px;
+  }
+
+  span{
+    font-size: 15px;
+  }
+
+  .hero{
+    font-size: 17px;
+  }
+
+  .projects{
+    grid-template-columns: repeat(1,1fr);
+   
+  }
+
+  .box-arrow{
+    margin-top: 10rem;
+  }
+}
+
+

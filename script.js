@@ -7,11 +7,11 @@ let go_back_btn = document.getElementById('go-back');
 web_project.addEventListener('click',()=>{
   
    web_project_section.style.display = 'none';
-   project_content_section.style.opacity= '1';
+   project_content_section.style.display= 'grid';
 });
 
 go_back_btn.addEventListener('click',()=>{
   
   web_project_section.style.display= 'grid';
-  project_content_section.style.opacity = '0';
+  project_content_section.style.display = 'none';
 });
