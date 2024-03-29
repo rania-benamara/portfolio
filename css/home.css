@@ -478,6 +478,10 @@ span{
   .box-arrow{
     margin-top: 10rem;
   }
+
+  .about{
+    margin-top: 7rem;
+  }
 }
 
 @media(max-width:350px){
@@ -498,7 +502,7 @@ span{
   }
 
   .about{
-    margin-top: 7rem;
+    margin-top: 7.5rem;
   }
   
 }
