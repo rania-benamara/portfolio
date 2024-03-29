@@ -412,6 +412,19 @@ span{
 
 
 @media (max-width:768px){
+  nav ul li{
+    padding: 5px;
+    font-size: 13px;
+  }
+
+  span{
+    font-size: 13px;
+  }
+  
+  .about{
+    margin-top: 5rem;
+  }
+
   .hero{
     flex-direction: column;
   }
@@ -453,6 +466,10 @@ span{
     font-size: 17px;
   }
 
+  .home{
+    margin-left: 15px;
+  }
+
   .projects{
     grid-template-columns: repeat(1,1fr);
    
@@ -465,11 +482,11 @@ span{
 
 @media(max-width:350px){
   nav ul li{
-    font-size: 12px;
+    font-size: 8px;
   }
 
   span{
-    font-size: 12px;
+    font-size: 8px;
   }
 
   .about-right p{
