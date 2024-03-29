@@ -364,8 +364,17 @@ span{
   0 0 10px #ad21f3;
   font-size: 25px;
 }
+/*-------------------------------------*/
+.webdesign div span{
+  font-size: 35px;
+}
 
-
+.webdesign img{
+  width: 100%;
+}
+.webdesign{
+  gap: 5rem;
+}
 /*--------media querry---------------*/
 
 
