@@ -454,4 +454,26 @@ span{
   }
 }
 
+@media(max-width:350px){
+  nav ul li{
+    font-size: 12px;
+  }
+
+  span{
+    font-size: 12px;
+  }
+
+  .about-right p{
+    font-size: 20px;  
+  }
+
+  .about-right h1{
+    font-size: 30px;
+  }
+
+  .about{
+    margin-top: 7rem;
+  }
+  
+}
 
